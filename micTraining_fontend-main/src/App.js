@@ -30,7 +30,10 @@ import InputCSV from "./components/InputCSV/InputCSV";
 import Python from "./components/Python/Python";
 import Python_task from "./components/python_task/python_task";
 import MachineLearning from "./components/machineLearning/machineLearning";
-import Pandas from "./components/pandas/pandas"; 
+import Pandas from "./components/pandas/pandas";
+import Advance_IoT from "./components/Advance_IoT/Advance_IoT"
+import Kafka from "./components/Kafka/Kafka"
+import ROS from "./components/ROS/ROS"
 // import Summarize from "./components/summarize_chart/summarize_chart";
 import Criteria from "./components/Criteria/Criteria";
 
@@ -102,6 +105,9 @@ export default class App extends Component {
             <Route path="/pandas" component={Pandas} />
             <Route path="/editPlan" component={editPlan} />
             <Route path="/Plan_log" component={Plan_log} />
+            <Route path="/Advance_IoT" component={Advance_IoT} />
+            <Route path="/Kafka" component={Kafka} />
+            <Route path="/ROS" component={ROS} />
             {/* <Route path="/VideoInput" component={Video} /> */}
 
             <Route path="/footer" component={Footer} />

@@ -96,77 +96,55 @@ class content extends Component {
 
                   <tr>
                     <td> 5 </td>
-                    <td> Analysis data by Control Chart  </td>
-                    <td> การวิเคราะห์ข้อมูลทางสถิติโดยใช้แผนภูมิควบคุม </td>
+                    <td> Advanc IoT  </td>
+                    <td> การประยุกต์ใช้ระบบ IoT สำหรับโรงงาน </td>
                     <td> <button className="btn btn-block btn-primary" onClick={(e) => {
                       e.preventDefault();
 
-                      window.location.replace("../ControlChart")
+                      window.location.replace("../Advance_IoT")
                     }}> View </button> </td>
-                    <td>  </td>
+                    <td> <Link to="dist\img\Advance_IoT\Advance_IoT.zip" target="_blank" download> Download</Link> </td>
                     {/* <td> <button className="btn btn-block btn-success" > Download </button> </td> */}
                   </tr>
 
                   <tr>
                     <td> 6 </td>
-                    <td> Basic Knowledge for Python  </td>
-                    <td> ความรู้พื้นฐานสำหรับภาษา Python </td>
+                    <td> Kafka for IoT  </td>
+                    <td> การประยุกต์ใช้งาน Kafka สำหรับงาน IoT </td>
                     <td> <button className="btn btn-block btn-primary" onClick={(e) => {
                       e.preventDefault();
 
-                      window.location.replace("../Python")
+                      window.location.replace("../Kafka")
                     }}> View </button> </td>
-                    <td> <Link to="dist\img\Python\basic_python_rev_A.zip" target="_blank" download> Download</Link> </td>
+                    <td> <Link to="dist\img\Kafka\Kafka_fot_IoT.zip" target="_blank" download> Download</Link> </td>
                   </tr>
 
                   <tr>
                     <td> 7 </td>
-                    <td> Data analytics and dashboard visualization with Python  </td>
-                    <td> การวิเคราะห์ข้อมูลและสร้าง Dashboard ด้วย ภาษา python โดยใช้เครื่องมือ pandas  </td>
-                    <td> </td>
-                    <td>  </td>
-                    {/* <td> <Link to="dist\img\Python\basic_python_rev_A.zip" target="_blank" download> Download</Link> </td> */}
-                  </tr>
+                    <td> Basic robot operating system (ROS)  </td>
+                    <td> พื้นฐานการใช้งานระบบปฏิบัติการหุ่นยนต์ </td>
+                    <td> <button className="btn btn-block btn-primary" onClick={(e) => {
+                      e.preventDefault();
 
+                      window.location.replace("../ROS")
+                    }}> View </button> </td>
+                    <td> <Link to="dist\img\ROS\ROS.zip" target="_blank" download> Download</Link> </td>
+                  </tr>
 
                   <tr>
                     <td> 8 </td>
-                    <td> The fundamentals of machine learning  </td>
-                    <td> ความรู้พื้นฐานทางด้าน machine learning  </td>
-                    <td> <button className="btn btn-block btn-primary" onClick={(e) => {
-                      e.preventDefault();
-
-                      window.location.replace("../machineLearning")
-                    }}> View </button> </td>
-
-                    <td> <Link to="dist\img\ML\basic_machine_learning.zip" target="_blank" download> Download</Link>  </td>
-                  </tr>
-
-                  <tr>
-                    <td> 9 </td>
-                    <td>Object Detection (Computer vision-Deeplearning) (AI)</td>
-                    <td>เรียนรู้เทคโนโลยี AI ที่ประยุกต์ใช้ในโรงงานอุตสาหกรรม <br />
-                      โดยเฉพาะการใช้งาน Deep Learning กับงานด้าน Computer vision </td>
-                    <td> <button className="btn btn-block btn-primary" onClick={(e) => {
-                      e.preventDefault();
-
-                      window.location.replace("../AI")
-                    }} > View </button> </td>
-
-                    <td>  </td>
-                    {/* <td> <button className="btn btn-block btn-success" > Download </button> </td> */}
-                  </tr>
-                  <tr>
-                    <td> 10 </td>
                     <td> Python for Office:Automating Company Tasks </td>
                     <td>1. สร้างเครื่องมือจัดการงานเอกสารแบบอัตโนมัติ <br />
                       2. ทำรายงานอัตโนมัติ (excel,pdf,word,powerpoint)<br /> 
-                      3. ส่งรายงานอัตโนมัติ ( email, Line Notify)  <br/>
+                      3. ส่งรายงานอัตโนมัติ ( email)  <br/>
                       4. นำโปรแกรมไปใช้งานจริง  Deployments และ บำรุงรักษาระบบ
-                       </td>
-                    <td> </td>
-                    <td>  </td>
-                    {/* <td> <button className="btn btn-block btn-success" > Download </button> </td> */}
+                    </td>
+                    <td> <button className="btn btn-block btn-primary" onClick={(e) => {
+                      e.preventDefault();
+
+                      window.location.replace("../python_task")
+                    }}> View </button> </td>
+                    <td> <Link to="dist\img\python_task\Basic_python.zip" target="_blank" download> Download</Link> </td>
                   </tr>
                 </tbody>
               </table>
