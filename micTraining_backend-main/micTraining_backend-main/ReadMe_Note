@@ -1,0 +1,50 @@
+พิมคีย์ลัด req  >> const packageName = require('packageName');
+
+At api_user 
+
+ถ้าต้องการให้ show error ว่าผิดอะไร  ใส่ try catch
+
+router.post("/user", async (req, res) => {
+  try {
+    //  result = user.create(req.body)
+    let insert_result = await user.create(req.body); //สร้างตัวแปร result มารับค่า
+    res.json({ result: insert_result });
+
+  } catch (error) {                             
+    res.json({ result: error });   //show error 
+  }
+});
+
+
+สร้าง folder constant 
+module.exports = {
+  ok: "OK",
+  nok: "NotOK",
+};
+
+ถ้า error
+ catch (error) {
+    console.log(error);
+    res.json({result:error, api_result: constant.nok });
+  }
+
+api_user ========================================================================================
+  //find keyword user  แบบยาว 
+router.get("/user/find/:username&:empNumber&:password", async (req, res) => {
+//   let username = req.params.username;
+//   let empNumber = req.params.empNumber;
+//   console.log(username , empNumber );
+
+let {username , empNumber} = req.params;
+res.json({ username, empNumber,password });
+  
+});
+
+
+
+
+**** การกำหนดตัวแปลแบบนี้เหมือนกันนะ 
+   const { income , discount } = req.params
+    // เหมือนกันกับด้านล่าง 
+    // const income = req.body.income 
+    // const discount = req.body.discount 

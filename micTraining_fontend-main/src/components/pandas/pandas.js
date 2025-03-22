@@ -1,0 +1,187 @@
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
+class Pandas extends Component {
+  render() {
+    const mystyle = {
+      color: "#4d4dbd",
+      padding: "20px",
+      fontFamily: "Arial"
+    };
+
+    const mystyle1 = {
+      textindent: "50px",
+    };
+
+    const mystyle2 = {
+      color: "#4caf50",
+      padding: "20px",
+      fontFamily: "Arial"
+    };
+
+    const img = {
+      display: "flex",
+      justifyContent: "center",
+      alignItem: "center"
+    }
+
+    return (
+      <div className="content-wrapper" >
+        {/* Content Header (Page header) */}
+        <div className="content-header">
+          <div className="container-fluid">
+            <div className="row mb-2">
+              <div className="col-sm-6">
+                <h1 className="m-0"> Data analytics and dashboard visualization with Python </h1>
+              </div>{/* /.col */}
+              <div className="col-sm-6">
+                <ol className="breadcrumb float-sm-right">
+                  <li className="breadcrumb-item"><Link to="../content"> Training Course</Link></li>
+                  <li className="breadcrumb-item active">Content</li>
+                </ol>
+              </div>
+              <table className="table table-striped table-bordered table-hover table-md">
+                <thead className="bg-primary" style={{ textAlign: 'center', overflow: 'auto' }}>
+                  <tr>
+                    <th>Topic</th>
+                    <th>Detail</th>
+                  </tr>
+                </thead>
+                <tbody><tr>
+                  <td> Name of Course (หลักสูตร)</td>
+                  <td> Data analytics and dashboard visualization with Python <b></b>
+                  </td>
+                </tr>
+                  <tr>
+                    <td> Time (ระยะเวลา) </td>
+                    <td> 3 วัน <br />
+                      08.30-09.00 น. Registration <br />
+                      09.00-16.00 น. Training
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> Objectives (วัตถุประสงค์) </td>
+                    <td>
+                    การวิเคราะห์ข้อมูลและสร้าง Dashboard ด้วย ภาษา python โดยใช้เครื่องมือ pandas  <br />
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Qualification (คุณสมบัติผู้เข้ารับการอบรม)</td>
+                    <td>Staff level up (M12 level up) (10 persons : group)  <br />
+                    • ผู้เข้าอบรมต้องผ่านหลักสูตร Basic Knowledge for Python  </td> 
+                  
+                  </tr>
+                  <tr>
+                    <td> Day1</td>
+                    <td> การใช้งาน miniconda enviroment กับ VS code   <br />
+                    • สร้างและดาวน์โหลด Pandas ลงใน enviroment ด้วย miniconda <br />
+                    • การใช้งาน miniconda ผ่าน VS code <br />
+                    การใช้เครื่อมือ Pandas ในการวิเคราะห์ข้อมูล <br />
+                    • การสร้าง series และ Dataframe  <br />
+                    • การเพิ่ม ลด แก้ไข ข้อมูลใน DataFrame  <br />
+                    • การ Filltering Data <br />
+                    • การ Query Data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> Day2</td>
+                    <td>
+                    • การ Evaluate Data  <br />
+                    • การ grouping   <br />
+                    • การ join DataFrame   <br />
+                    • การ Pivoting  <br />
+                    • การแสดงผลข้อมูลด้วยกราฟ (line , scatter , boxplot ,histogram)  <br />
+                    • การดึงข้อมูลจาก excel file ลงใน Dataframe <br />
+                    • export dataframe to csv file 
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td> Day3</td>
+                    <td>
+                    การสร้าง Dashboard ด้วย python plotly  <br />
+                    • input/output interactive   <br />
+                    • การสร้างกราฟ   <br />
+                    • Deploy dashboard เพื่อนำไปใช้  <br />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td> Notebook and Software </td>
+                    <td> ** ผู้เข้าอบรมต้องนำ Computer Notebook มาด้วย รายละเอียดดังนี้ <br />
+                      (คอมพิวเตอร์ต้องไม่ใช่ Stand alone)  <br />
+                      1. Window OS 10  <br />
+                      2. CPU	Intel core i5 <br />
+                      3. Disk free space drive C	10 Gb <br />
+                      4. install Program  <br />
+                      •  VS code <br />
+                      •  Miniconda  <br />
+                    </td>
+                  </tr></tbody></table>
+            </div>
+          </div>
+          <h3 style={mystyle2} > Miniconda </h3>
+          <p style={{ textIndent: 50 }} > เป็นส่วนหนึ่งของ Anaconda ซึ่งเป็นเฟรมเวิร์คสำหรับการทำ data science สำหรับภาษาไพทอน ส่วน Miniconda เป็นตัวจัดสภาพแวดล้อมให้ไพทอน
+            เช่นถ้าต้องการพัฒนาโปรแกรมให้สามารถรันได้ทั้ง 32 บิตและ 64  บิต ก็ต้องตัวนี้เลย สามารถเลือกรุ่นของ Python ได้ด้วย</p>
+        </div>
+
+        <section className="content">
+          {/* Scroll to top */}
+          <a id="back-to-top" href="#" className="btn btn-primary back-to-top" role="button" aria-label="Scroll to top">
+            <i className="fas fa-chevron-up" />
+          </a>
+
+          {/* แคบซูล 1 */}
+          <div className="card card-blue">
+            <div className="card-header">
+              <h3 className="card-title"> Install miniconda </h3>
+              <div className="card-tools">
+                <button type="button" className="btn btn-tool" data-card-widget="collapse">
+                  <i className="fas fa-minus" />
+                </button>
+                {/* <button type="button" className="btn btn-tool" data-card-widget="remove">
+                  <i className="fas fa-times" />
+                </button> */}
+              </div>
+            </div>
+            {/* /.card-header */}
+            <div className="card-body " style={{ display: 'block' }}>
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="form-group">
+                    <label>Miniconda</label>
+                  </div>
+                </div>
+              </div>
+              {/* /.row */}
+              <p> 1. เข้าเว็บไซต์ https://docs.conda.io/en/latest/miniconda.html#system-requirements </p>
+              <p> 2. เลือก window 64 bit  </p>
+              <div style={img}>
+                <img src="dist/img/Python/install.jpg" />
+              </div>
+              <div style={img}>
+                <img src="dist/img/Python/install1.jpg" />
+              </div>
+              <p> 3. หลังจากลงเสร็จแล้ว ตรวจสอบ version  </p>
+              <p> เปิด command prompt  </p>
+              • conda --version
+              <div style={img}>
+                <img src="dist/img/Python/install2.jpg" />
+              </div>
+              {/* /.row */}
+            </div>
+            {/* /.card-body */}
+          </div>
+
+          {/* เพิ่มใหม่ตรงนี้ */}
+
+        </section >
+      </div >
+
+    );
+  }
+}
+
+
+export default Pandas;

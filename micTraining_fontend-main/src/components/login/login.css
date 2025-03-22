@@ -1,0 +1,8 @@
+.card-body p { 
+color: rgb(250, 19, 138); 
+font-weight: bold;
+text-transform: uppercase;
+}
+.login-logo p { 
+    text-transform: uppercase;
+}

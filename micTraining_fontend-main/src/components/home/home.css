@@ -1,0 +1,10 @@
+.small-box:first-child { 
+background-color: rgb(230, 102, 102);
+} 
+
+.content-warpper { 
+    background-color: rgba(0, 0, 0, 0.5);  
+    backdrop-filter: blur(10px); 
+}
+
+
