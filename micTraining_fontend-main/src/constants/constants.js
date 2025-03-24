@@ -37,7 +37,8 @@ export const UPLOAD_PHOTO_FAIL_MESSAGE =
 //export const apiUrl = "http://localhost:2006/MICTraining/";  //ip,port ที่ Deploy (backend running)
 //export const imageUrl = "http://localhost:2006/";
 
-export const apiUrl = "http://10.121.1.123:2006/MICTraining/";   //Deploy backend
+// export const apiUrl = "http://10.121.1.123:2006/MICTraining/";   //Deploy backend
+export const apiUrl = "http://192.168.0.125:2006/MICTraining/";   //Deploy backend
 //export const imageUrl = "http://10.121.1.123:2006/";
 
 export const YES = "YES";

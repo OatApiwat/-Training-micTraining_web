@@ -1458,7 +1458,7 @@ class EditPlan extends Component {
                     <div style={{ width: "14%", marginLeft: 10 }}>
                       <button
                         type="button"
-                        class={this.state.class_btn_react}
+                        class={this.state.class_btn_docker}
                         onClick={(e) => {
                           this.setState({
                             class_btn_iot: "btn btn-block btn-warning",

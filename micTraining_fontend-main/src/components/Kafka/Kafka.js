@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class Advance_IoT extends Component {
+class Kafka extends Component {
   render() {
     const mystyle = {
       color: "#4d4dbd",
