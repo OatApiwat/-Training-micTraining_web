@@ -1313,11 +1313,11 @@ class EditPlan extends Component {
                             class_btn_js: "btn btn-block btn-dark",
                             class_btn_react: "btn btn-block btn-secondary",
                             class_btn_docker: "btn btn-block btn-outline-primary",
-                            selected_category: "Python",
+                            selected_category: "Python_task",
                           });
                         }}
                       >
-                        Python
+                        Python Task
                       </button>
                     </div>
                     <div style={{ width: "14%", marginLeft: 10 }}>
@@ -1426,11 +1426,11 @@ class EditPlan extends Component {
                             class_btn_js: "btn btn-block btn-dark btn-lg",
                             class_btn_react: "btn btn-block btn-secondary",
                             class_btn_docker: "btn btn-block btn-outline-primary",
-                            selected_category: "Javascript",
+                            selected_category: "JavaScript",
                           });
                         }}
                       >
-                        Javascript
+                        JavaScript
                       </button>
                     </div>
                     <div style={{ width: "14%", marginLeft: 10 }}>

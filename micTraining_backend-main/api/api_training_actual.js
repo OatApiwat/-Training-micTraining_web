@@ -50,14 +50,16 @@ router.post("/calendar_monthly_actual", async (req, res) => {
       ,iif(DATENAME(dw,[date])='Thursday','TH',left(DATENAME(dw,[date]),1)) as [date_week]
       ,iif([cause_name] is null,'',[cause_name]) as [cause_name]
       ,CASE
-        WHEN [cause_name] = 'Database' THEN 'btn btn-block btn-success'
-        WHEN [cause_name] = 'JavaScript' THEN 'btn btn-block btn-warning'
-        WHEN [cause_name] = 'IoT' THEN 'btn btn-block btn-danger'
-        WHEN [cause_name] = 'Web_Application' THEN 'btn btn-block btn-primary'
-        WHEN [cause_name] = 'ROS' THEN 'btn btn-block btn-dark'
-        WHEN [cause_name] = 'Docker' THEN 'btn btn-block btn-info'
-        --WHEN [cause_name] = 'Pandas' THEN 'btn btn-block btn-outline-danger'
-        WHEN [cause_name] = 'Python_Task' THEN 'btn btn-block btn-outline-danger'
+        WHEN [cause_name] = 'IOT' THEN 'btn btn-block btn-warning'
+        WHEN [cause_name] = 'Python_task' THEN 'btn btn-block btn-primary'
+        WHEN [cause_name] = 'Advance_IoT' THEN 'btn btn-block btn-success'
+        WHEN [cause_name] = 'Kafka' THEN 'btn btn-block btn-info'
+        WHEN [cause_name] = 'ROS' THEN 'btn btn-block btn-danger'
+        WHEN [cause_name] = 'Database' THEN 'btn btn-block btn-outline-danger'
+        WHEN [cause_name] = 'JavaScript' THEN 'btn btn-block btn-dark'
+        WHEN [cause_name] = 'React' THEN 'btn btn-block btn-secondary'
+        WHEN [cause_name] = 'Docker' THEN 'btn btn-block btn-outline-primary'
+        
         ELSE 'btn btn-block btn-outline-secondary'
         END AS [class_button] 
       ,iif(DATENAME(dw,[date])='Sunday','red','black') as [date_color]
